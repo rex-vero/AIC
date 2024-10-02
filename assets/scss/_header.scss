@@ -1,0 +1,15 @@
+.header {
+    justify-content: space-between;
+    background: rgb(5, 57, 105);
+    background: linear-gradient(90deg, rgba(5, 57, 105, 1) 0%, rgba(50, 18, 122, 1) 100%);
+}
+
+.text {
+    color: #e0e3dc;
+}
+
+.header-img {
+    animation: load 1s 1 ease-in-out forwards;
+    height: 20rem;
+    width: auto;
+}

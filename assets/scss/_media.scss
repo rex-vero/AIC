@@ -1,0 +1,17 @@
+@media only screen and (max-width:770px) {
+    .header {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        background: rgb(5, 57, 105);
+        background: linear-gradient(0deg, rgba(5, 57, 105, 1) 0%, rgba(50, 18, 122, 1) 100%);
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .header-img {
+        height: auto;
+    }
+}

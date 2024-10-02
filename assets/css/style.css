@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  justify-content: space-between;
+  background: rgb(5, 57, 105);
+  background: linear-gradient(90deg, rgb(5, 57, 105) 0%, rgb(50, 18, 122) 100%);
+}
+
+.text {
+  color: #e0e3dc;
+}
+
+.header-img {
+  animation: load 1s 1 ease-in-out forwards;
+  height: 20rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 770px) {
+  .header {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(5, 57, 105);
+    background: linear-gradient(0deg, rgb(5, 57, 105) 0%, rgb(50, 18, 122) 100%);
+  }
+  .text {
+    text-align: center;
+  }
+  .header-img {
+    height: auto;
+  }
+}
+@keyframes load {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
