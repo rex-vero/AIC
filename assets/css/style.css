@@ -1,11 +1,32 @@
+@font-face {
+  font-family: vazir;
+  src: url("../font/Vazir-Bold-FD-WOL.ttf");
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: vazir;
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a0a3f;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #100627;
 }
 
 .header {
@@ -24,6 +45,82 @@ html {
   width: auto;
 }
 
+.nav {
+  border-bottom: 2px solid #3b3b3b;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.btn-small {
+  display: none;
+  background-color: transparent;
+  border: none;
+  transition: 0.7s;
+}
+.btn-small:hover {
+  transform: scale(1.2);
+}
+
+.bi-list {
+  color: #32127a;
+}
+
+.bi-x-lg {
+  font-size: 2rem;
+  color: rgb(192, 0, 0);
+  transition: 0.7s;
+  cursor: pointer;
+}
+.bi-x-lg:hover {
+  transform: scale(1.2);
+}
+
+.logo {
+  height: 6.7rem;
+}
+
+.hidden {
+  display: flex;
+}
+
+.nav-text {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.7s;
+  position: relative;
+}
+.nav-text:hover {
+  color: #32127a;
+}
+.nav-text::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #32127a;
+  transition: 0.7s;
+}
+.nav-text:hover::after {
+  width: 100%;
+  color: #32127a;
+}
+
+.btn-sign {
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid #32127a;
+  background-color: #32127a;
+  color: #fff;
+  transition: 0.7s;
+}
+.btn-sign:hover {
+  color: #32127a;
+  background-color: #fff;
+}
+
 @media only screen and (max-width: 770px) {
   .header {
     height: 100vh;
@@ -37,6 +134,12 @@ html {
   }
   .header-img {
     height: auto;
+  }
+  .hidden {
+    display: none;
+  }
+  .btn-small {
+    display: block;
   }
 }
 @keyframes load {

@@ -1,9 +1,32 @@
+@font-face {
+    font-family: vazir;
+    src: url('../font/Vazir-Bold-FD-WOL.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: vazir;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a0a3f;
+    border-radius: 1px;
+
+    &:hover {
+        background: #100627;
+    }
 }
